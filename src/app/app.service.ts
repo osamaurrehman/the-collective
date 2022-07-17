@@ -28,6 +28,7 @@ export class HttpService {
 
   getHeaders() {
     this.headers = new HttpHeaders();
+    //add personal access token for auth if needed
     this.token = '';
     if (this.token && this.token.length) {
       this.headers = this.headers.append(
