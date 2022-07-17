@@ -28,7 +28,7 @@ export class HttpService {
 
   getHeaders() {
     this.headers = new HttpHeaders();
-    this.token = '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';
+    this.token = '';
     if (this.token && this.token.length) {
       this.headers = this.headers.append(
         'Authorization',
